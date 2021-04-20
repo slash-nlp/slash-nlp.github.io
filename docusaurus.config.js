@@ -7,7 +7,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "favicon.ico",
   organizationName: "slash-nlp", // Usually your GitHub org/user name.
   projectName: "slash-nlp", // Usually your repo name.
   themeConfig: {
