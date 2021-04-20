@@ -1,0 +1,31 @@
+---
+sidebar_position: 3
+---
+
+# Embed a Video
+
+Videos can be embedded in a page using the MDX markdown file types.
+
+## Youtube
+
+Get the **id** of the youtube video you want to embed.
+
+### Example video
+
+In the link address of `https://www.youtube.com/watch?v=fNxaJsNG3-s`, the **id** of the video is `fNxaJsNG3-s`
+
+### Import react-youtube
+
+Say your file name is `my-embed-video-page.mdx`, and it is located inside `docs` folder:
+
+```mdx title="my-embed-video-page.mdx"
+# Tokenization
+
+import YouTube from "react-youtube";
+<YouTube videoId="fNxaJsNG3-s" />;
+
+```
+
+All you need to do is replace the `videoId` parameter value with the id of your youtube video.
+
+The video embed will be rendered after the **h1** tag `Tokenization`.
