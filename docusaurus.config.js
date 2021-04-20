@@ -12,7 +12,6 @@ module.exports = {
   projectName: "slash-nlp", // Usually your repo name.
   themeConfig: {
     navbar: {
-      // title: "Home",
       logo: {
         alt: "/nlp logo",
         src: "img/logo.png",
