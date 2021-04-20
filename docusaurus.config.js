@@ -3,7 +3,7 @@ module.exports = {
   title: "/nlp",
   tagline: "An open-source repository for NLP studies and research resources",
   url: "https://slash-nlp.github.io",
-  baseUrl: "/slash-nlp/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
