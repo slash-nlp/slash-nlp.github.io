@@ -1,0 +1,36 @@
+---
+sidebar_label: "Sequencing"
+sidebar_position: 1
+---
+
+# Sequencing
+
+Sequencing is required for turning sentences into data.
+
+The process of sequencing turns each word in a sentence into a number from a given `Tokenizer`'s word index and produces an array of integers for each sentence.
+
+## Google Colab
+
+```
+https://goo.gle/tfw-nlp2
+```
+
+import YouTube from "react-youtube";
+
+<YouTube videoId="r9QjkdSJZ2g" />
+
+## Handling words out of vocabulary
+
+When sequencing sentences that contain words not present in the vocabulary of the `Tokenizer`, unless otherwise specified, the tokenizer will ignore the words from the final output integer array.
+
+Libraries like **tensorflow** and **keras** provide `OOV` tokens, which replace unknown words with a separate integer value, which although reduces meaning in a sentence does not completely remove it.
+
+## Handling sentences of varying length
+
+Padding can be used to handle such cases.
+
+Padding techniques take into account the sentences with the max number of words. Sentences that have fewer words are padded with some arbitrary number _e.g._ `0` to match the length of the largest sentence in the corpus.
+
+Padding can be done in the **front**(pre) or in the **back**(post).
+
+Padding functions also provide a `max_length` parameter which will truncate elements in an array. This can also be in the front or back. Generally when `max_length` is specified, truncating is done from the end where padding is done so that meaningful data isn't lost.
