@@ -1,7 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "/nlp",
-  tagline: "An open-source repository for NLP studies and research resources",
+  tagline:
+    "A free and open-source repository for NLP studies and research resources",
   url: "https://slash-nlp.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
