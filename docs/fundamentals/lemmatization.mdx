@@ -1,0 +1,32 @@
+---
+sidebar_title: "Lemmatization"
+sidebar_position: 2
+---
+
+# Lemmatization
+
+A text pre-processing technique that converts a word to it's root(**base**) form.
+
+Words can have many complex forms. In the English language, due to it's brilliantly sophisticated grammar, a word can be transformed with various prefixes and suffixes for appropriate use regarding the context, time, and subject.
+
+Lemmatization helps narrow down the vocabulary by deconstructing words to their simplest or root form.
+
+For example, the words `walking` and `walked` can be lemmatized to `walk`.
+
+## Stop words
+
+These are words that occur frequently in a setence but do not contribute much to the total meaning of a sentence .
+
+## Importance
+
+### Lemmas
+
+A plain language can contain lots of words that are noisy unless they are properly `cleaned`. Lemmatization performs that. By removing a word's complex form into one easily-recognizable form, the word can convey proper meaning for the computer under many contexts.
+
+### Stopwords
+
+By removing stopwords, it is possible to structure the corpus so that focus falls on the words that are truly important.
+
+### Note
+
+_However, lemmatizing and dropping stopwords might result in your models performing worse. So you should treat this preprocessing as part of your hyperparameter optimization process._
